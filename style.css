@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    background-color: rgba(229, 219, 236, 0.5);
+}
+.main_container{
+    height: 100%;
+}
+
+.first-container{
+    border: 0.1px solid rgb(245, 231, 231);
+    background-color:white;
+    height: 17rem;
+    position: absolute;
+    left: 0.7rem;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.5rem;
+
+}
+
+.nav-align{
+    display: flex;
+    align-self: center;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+i{
+    display: flex;
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:hover{
+    color: rgb(96, 151, 96);
+}
+
+.font{
+   color:#0c6c5d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cer-dev{
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+.sec-container{
+    border: 2px solid black;
+    background-color:white;
+    height: 22rem;
+    width: 16rem;
+    background-image:url(MyImage.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    left: 4.5rem;
+    bottom: 0.5rem;
+}
+.my-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0.3rem;
+}
+
+h1{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.third-container{
+    border: 2px solid black;
+    background-color: beige;
+    height: 21rem;
+    width: 27rem;
+    position: absolute;
+    left: 20rem;
+    z-index: -1;
+    display: flex;
+    justify-content:flex-start;
+    overflow-y: scroll;
+    bottom: 1rem;
+}
+
+
+.div-pad{
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 0.5rem;
+}
+
+.education{
+    padding:0.5rem 1rem 1rem 0.5rem;
+}
+
+.skills-bar {
+    padding: 0px 33px;
+  }
+
+  
+  .skills-bar .bar .info span {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .info {
+    margin-bottom: 1px;
+    color: #07374a;
+  }
+
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 4px;
+    width: 174px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .bar .progress-line span {
+    position: absolute;
+    background: #25b79f;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    text-transfrom = uppercase;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .progress-line .html {
+    width: 80%;
+  }
+  .progress-line .css {
+    width: 70%;
+  }
+  .progress-line .bootstrap {
+    width: 82%;
+  }
+  .progress-line .javascript {
+    width: 62%;
+  }
+  .progress-line .c {
+    width: 90%;
+  }
+  .progress-line .GitHub{
+    width: 83%;
+  }
+  
+  
+  
+  /* ////........Media Query........//// */
+  
+  @media (max-width: 700px) {
+      .skills{
+          width: 80%;
+      }
+  
+      .skills-bar .bar .progress-line{
+          width: 100%;
+      }
+  }      
